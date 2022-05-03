@@ -80,7 +80,7 @@ export const EntriesProvider: FC = ({ children }) => {
       dispatch({ type: "Update-Enrtry", payload: entry });
 
       if (isShowSnackBar)
-        enqueueSnackbar("Entrada actualizada", {
+        enqueueSnackbar("更新しました", {
           variant: "success",
           autoHideDuration: 1500,
           anchorOrigin: {
