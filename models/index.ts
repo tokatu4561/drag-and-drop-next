@@ -1,0 +1,1 @@
+export { EntryModel } from "./Entry";

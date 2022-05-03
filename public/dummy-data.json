@@ -1,0 +1,25 @@
+{
+    "entries": [
+    {
+      "_id": "entry1",
+      "description":
+        "準備中です",
+      "status": "pending",
+      "createdAt": 20201022
+    },
+    {
+      "_id": "entry2",
+      "description":
+        "進行中です",
+      "status": "in-progress",
+      "createdAt": 20211022
+    },
+    {
+      "_id": "entry3",
+      "description":
+        "実施済みです",
+      "status": "finished",
+      "createdAt": 20221022
+    }
+  ]
+}
