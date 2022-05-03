@@ -2,6 +2,7 @@ import { FC, useEffect, useReducer } from "react";
 import { Entry } from "../../interfaces/entry";
 import { EntriesContext } from "./EntriesContext";
 import { useSnackbar } from "notistack";
+import { v4 as uuidv4 } from "uuid";
 
 export interface EntriesState {
   entries: Entry[];
@@ -59,7 +60,7 @@ export const EntriesProvider: FC = ({ children }) => {
     // const { data } = await axios.post<Entry>("/api/entries", { description });
 
     const entry: Entry = {
-      _id: "3131",
+      _id: uuidv4(),
       description,
       createdAt: Date.now(),
       status: "pending",
